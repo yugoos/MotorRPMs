@@ -1,0 +1,19 @@
+{
+  "name": "Fan RPM's",
+  "apiVersion": "1.0.0",
+  "author": "Cory Klopotic",
+  "version": "0.0.1",
+  "description": "Measures the RPM's from a fan using the fan's TACH signal.  TACH signal goes low 2 times per revolution.",
+  "extensions": {
+    "Fan RPM's": {
+      "type": "DigitalMeasurement",
+      "entryPoint": "fanRpm.FanRpmMeasurer",
+      "metrics": {
+        "RPM": {
+          "name": "RPM",
+          "notation": "RPM"
+        }
+      }
+    }
+  }
+}
