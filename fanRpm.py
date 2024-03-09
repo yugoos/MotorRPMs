@@ -49,5 +49,5 @@ class FanRpmMeasurer(DigitalMeasurer):
 
         if _RPM in self.requested_measurements:
             if float(self.duration) > 0:
-                values[_RPM] = int((self.falling_edge_count / 2) / (float(self.duration) / 60))
+                values[_RPM] = int((self.falling_edge_count / 4) / (float(self.duration) / 60))
         return values
